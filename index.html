@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stock Research — 개인 투자 연구 도구</title>
+  <style>
+    body { max-width:760px; margin:48px auto; padding:0 24px;
+      font-family:system-ui,sans-serif; line-height:1.8; color:#243047; }
+    h1,h2 { color:#14213d; }
+    section { margin-top:40px; }
+    a { color:#2455b5; }
+  </style>
+</head>
+<body>
+  <h1>Stock Research</h1>
+  <p>운영자 parkgwajang의 개인 투자 연구를 위한 데이터 수집 도구입니다.
+    Android 휴대폰에서 한국투자증권 API로 주식 시세를 조회하고,
+    결과를 본인의 Google Drive에 저장합니다.</p>
+  <p>현재 수집 프로그램은 시세 조회와 파일 저장을 수행하며,
+    매매 주문 기능은 포함하지 않습니다.
+    일반 사용자를 대상으로 회원가입이나 서비스를 제공하지 않습니다.</p>
+  <p><a href="#privacy">개인정보처리방침</a></p>
+
+  <section id="privacy">
+    <h2>개인정보처리방침</h2>
+    <p>적용일: 2026년 10월 27일</p>
+
+    <h3>Google 데이터 접근과 사용</h3>
+    <p>Google 로그인은 사용자가 본인의 Drive에 수집 결과를
+      업로드하도록 허용하기 위해 사용합니다.
+      rclone은 drive.file 권한 범위에서 앱이 만들거나
+      사용자가 접근을 허용한 파일을 처리합니다.
+      Google 계정 비밀번호를 수집하거나 저장하지 않습니다.</p>
+
+    <h3>저장하는 정보</h3>
+    <p>종목명, 종목코드, 주가, 등락률, 거래량, 거래대금,
+      조회 시각을 휴대폰과 본인의 Google Drive에 저장합니다.
+      API 키와 인증 토큰은 휴대폰의 앱 내부 설정에 보관하며,
+      결과 파일이나 이 공개 웹사이트에 포함하지 않습니다.</p>
+
+    <h3>공유 및 분석</h3>
+    <p>수집 파일을 공개 배포하거나 판매하지 않습니다.
+      사용자가 별도로 Google Drive를 ChatGPT에 연결하고
+      분석을 요청하면, 해당 파일 내용이 분석을 위해
+      OpenAI 서비스에 전달될 수 있습니다.
+      이 연결은 별도로 관리되며 해당 서비스의 정책이 적용됩니다.</p>
+
+    <h3>보관과 삭제</h3>
+    <p>데이터는 사용자가 삭제할 때까지 보관합니다.
+      사용자는 휴대폰과 Drive에서 파일을 삭제하고,
+      Google 계정의 연결 관리에서 앱 접근 권한을 철회할 수 있습니다.
+      접근 권한 철회만으로 기존 파일이 삭제되지는 않습니다.</p>
+
+    <h3>웹사이트 방문</h3>
+    <p>이 페이지에는 자체 방문 분석 도구, 광고, 입력 양식이 없습니다.
+      호스팅 제공자인 GitHub는 자체 정책에 따라 접속 로그를
+      처리할 수 있습니다.</p>
+
+    <h3>문의</h3>
+    <p>운영자: parkgwajang.
+      문의는 아래 저장소의 Issues를 이용해주세요.
+      공개 문의에 API 키나 개인정보를 포함하지 마세요.</p>
+    <p><a href="https://github.com/parkgwajang/parkgwajang.github.io/issues">
+      문의하기</a></p>
+
+    <p>Google API로 받은 정보의 사용 및 다른 앱으로의 전송은
+      Limited Use 요건을 포함한
+      <a href="https://developers.google.com/terms/api-services-user-data-policy">
+      Google API Services User Data Policy</a>를 준수합니다.</p>
+  </section>
+</body>
+</html>
